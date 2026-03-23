@@ -1,81 +1,79 @@
-# 📊 Inventory Optimization & Demand Forecast Dashboard
+# 📊 AI-Driven Inventory Optimization & Demand Forecast Dashboard
 ### *End-to-End Supply Chain Analytics Project | SQL • Python (Prophet) • Power BI*
 
 ---
 
 ## 📂 Project Overview
-[![Project Poster](Preview.png)](Preview.png)
+[![Project Poster](Preview.png)](preview.png)
 
 **Project Title**: Olist E-Commerce Inventory Optimization
 **Tools Used**: MySQL, Python (Jupyter Notebook), Power BI Desktop, FB Prophet
 
 ### 📝 Description
-Ye project ek real-world business problem ko solve karta hai: **"Inventory Stock-outs aur Overstocking ko kaise roka jaye?"** Maine Olist E-commerce dataset ka use karke ek automated system banaya hai jo products ko prioritize karta hai (**ABC Analysis**), future demand predict karta hai (**AI Forecasting**), aur warehouse efficiency track karta hai (**Lead Time Analysis**).
+This project addresses a critical real-world business challenge: **"How to eliminate stock-outs and minimize overstocking costs?"** Using the Olist E-commerce dataset, I engineered an automated decision-support system that prioritizes products using **ABC Analysis**, predicts future demand via **AI-based Time-Series Forecasting**, and monitors warehouse efficiency through **Logistics Lead Time Analysis**.
 
 ---
 
 ## 🎯 Key Business Questions Answered
-Dashboard ko aise design kiya gaya hai ki ye niche diye gaye sawalon ke jawab de sake:
-* Hamare **Top 15% Products (Class A)** kaunse hain jo 70% revenue dete hain?
-* Agle 30 dinon mein predicted demand kya hai aur hamara **Safety Stock** kahan hona chahiye?
-* Kaunse categories mein **Stock-out Risk** sabse zyada hai?
-* Kya hamara **Delivery Lead Time** (12.5 days) target ke mutabiq hai?
-* Customer reviews aur sales volume ke beech kya correlation hai?
+The dashboard is strategically architected to provide data-driven answers to these core queries:
+* Which are the **Top 15% Products (Class A)** contributing to 70% of the total revenue?
+* What is the 30-day demand outlook, and where should the **Safety Stock Floor** be established?
+* Which specific product categories face the highest **Stock-out Risk**?
+* Is our **Delivery Lead Time** (12.5 days) meeting the organizational efficiency benchmarks?
+* What is the correlation between customer engagement (reviews) and sales velocity?
 
 ---
 
 ## 🚀 Tech Stack Details
-* **MySQL**: Data cleaning, complex joins, aur window functions ke zariye **ABC Classification Views** banayi.
-* **Python (Prophet)**: Time-series forecasting model train kiya taaki demand spikes aur seasonality (Holidays/Weekends) ko handle kiya ja sake.
-* **Power BI**: Interactive visuals aur **Star Schema Data Modeling** ke zariye insights ko chamkaya.
-* **DAX**: Custom measures banaye KPIs aur growth percentages calculate karne ke liye.
+* **MySQL**: Performed extensive data engineering, complex joins, and window functions to build **ABC Classification Views**.
+* **Python (Prophet)**: Developed a predictive time-series model to account for demand surges and seasonality (Holidays/Weekends).
+* **Power BI**: Architected a **Star Schema Data Model** to drive high-performance interactive visualizations.
+* **DAX**: Engineered custom measures for Dynamic KPIs, growth percentages, and safety thresholds.
 
 ---
 
 ## 📈 Key Performance Indicators (KPIs)
-Dashboard par ye main metrics highlight kiye gaye hain:
-* **Total Revenue**: $10.8M+ (Historical Trend)
-* **Avg. Delivery Time**: 12.5 Days (Logistics Benchmark)
-* **Class A Contribution**: 70% of Total Sales
-* **AI Forecast Accuracy**: High-confidence demand prediction intervals.
+The dashboard highlights the following high-stake performance metrics:
+* **Total Historical Revenue**: $10.8M+ 
+* **Average Delivery Lead Time**: 12.5 Days (Benchmark: 10 Days)
+* **Class A Contribution**: 70% of Revenue from 15% SKUs
+* **AI Forecast Precision**: Integrated high-confidence intervals for demand replenishment.
 
 ---
 
 ## 📊 Walkthrough of Key Visuals
 
 ### 🔹 1. AI Demand Forecast vs. Safety Threshold (Line Chart)
-* **Insight**: Blue line (Predicted Demand) aur Red Dashed line (Safety Limit) ka comparison.
-* **Actionable**: Jab Blue line Red ko touch karti hai, ye warehouse manager ke liye "Replenishment Alert" hai.
+* **Insight**: Compares Predicted Demand (Blue Line) against the Safety Stock Limit (Red Dashed Line).
+* **Actionable**: When the prediction nears the threshold, it serves as an automated **"Replenishment Alert"** for warehouse managers.
 
 ### 🔹 2. Inventory Distribution (Donut Chart)
-* **Insight**: Products ka breakdown 'A', 'B', aur 'C' classes mein.
-* **Actionable**: Class A products par 100% focus aur Class C par lean inventory management apply karna.
+* **Insight**: Categorizes the product portfolio into 'A', 'B', and 'C' classes based on financial impact.
+* **Actionable**: Facilitates **Tight Inventory Control** for Class A items and Lean Management for Class C items.
 
 ### 🔹 3. Avg. Delivery Lead Time (Gauge Chart)
-* **Insight**: Order se delivery tak ka average waqt.
-* **Actionable**: 12.5 din ka lead time dikhata hai ki logistics mein 25% improvement ka scope hai (Target: 10 Days).
+* **Insight**: Monitors the end-to-end duration from order inception to customer delivery.
+* **Actionable**: Identifies a **25% efficiency gap** (Actual 12.5 vs Target 10), highlighting the need for logistics process re-engineering.
 
 ### 🔹 4. Monthly Revenue Trend (Area Chart)
-* **Insight**: Month-on-month sales ki "Volume" aur "Seasonality" track karta hai.
-* **Actionable**: December peaks ke liye pehle se warehouse staff plan karne mein madad karta hai.
+* **Insight**: Visualizes historical revenue volume and seasonal growth patterns.
+* **Actionable**: Enables proactive workforce and space planning for peak Q4 sales periods.
 
 ---
 
 ## 💡 Business Impact & Insights
-1. **Focus on High-Value**: 15% SKUs hi 70% revenue drive karte hain, unka stock kabhi khatam nahi hona chahiye.
-2. **Quality vs Sales**: Class A products par feedback count sabse zyada hai, jo brand trust maintain karne ke liye zaroori hai.
-3. **Logistics Bottleneck**: Peak months mein delivery time badh jata hai, jise optimize karne ki zaroorat hai.
+1. **Strategic Prioritization**: 15% of SKUs drive 70% of revenue; ensuring **Zero Stock-outs** for these items is critical for revenue protection.
+2. **Quality Correlation**: High-value (Class A) products receive the highest feedback volume, making them the primary drivers of brand reputation.
+3. **Logistics Bottlenecks**: Peak demand periods show increased lead times, indicating a need for scalable logistics infrastructure.
 
 ---
 
 ## 🏗️ Project Architecture
-1. **Data Extraction**: MySQL se transactional data load kiya.
-2. **Data Engineering**: SQL Views ke zariye ABC Logic aur Lead Time calculate kiya.
-3. **AI Modeling**: Python mein Prophet model se 30-day forecast generate kiya.
-4. **Visualization**: Power BI mein interactive slicers (Category/Class) ke saath report banayi.
+1. **Data Engineering**: Processed raw transactional data within **MySQL** to calculate ABC logic and logistics speed.
+2. **AI Modeling**: Utilized **Python (Prophet)** to generate a 30-day predictive demand outlook.
+3. **Intelligence Layer**: Deployed an interactive **Power BI** dashboard with granular slicers for category-level deep dives.
 
 ---
 
 ## 👨‍🎓 Developed By
 **[Rahul Solra]**
-# Inventory_Replenishment_System
