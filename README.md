@@ -1,4 +1,4 @@
-# 📊 AI-Driven Inventory Optimization & Demand Forecast Dashboard
+# Inventory Optimization & Demand Forecast Dashboard
 ### *End-to-End Supply Chain Analytics Project | SQL • Python (Prophet) • Power BI*
 
 ---
